@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map1"
+    >
+
+    <TextView
+        android:id="@+id/last_update_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingTop="2dp"
+        android:background="@android:color/white"
+        android:text="Last Updated : --"
+        android:textColor="@android:color/black"
+        />
+    <fragment
+        android:id="@+id/map_frag"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/last_update_text"
+        tools:context="trackurspot.com.trackurspot.MapsActivity" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:fab_labelStyle="@style/menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            app:fab_title="  My Bus  "
+            android:src="@drawable/singlebus"
+            android:tint="@color/white"
+            />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:src="@drawable/multiplebusy"
+            android:tint="@color/white"
+            app:fab_title="  All Bus  " />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Resume"
+        android:elevation="5dp"
+        android:id="@+id/current_location_click"
+        android:onClick="current_location_click"
+
+        android:layout_alignBottom="@+id/multiple_actions"
+        android:layout_alignParentLeft="true"
+        style="@style/Your.Button"/>
+
+
+</RelativeLayout>

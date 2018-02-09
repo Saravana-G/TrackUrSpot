@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "4145074089",
+    "project_id": "psychic-upgrade-123512"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4145074089:android:0d446be2ea6d8e2f",
+        "android_client_info": {
+          "package_name": "trackurspot.com.trackurspot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3ig4t4isTkG2OLGIsMxEqXsKKrx-SSV0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

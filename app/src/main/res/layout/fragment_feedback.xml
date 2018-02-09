@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Ur Feedback ( Max 200 character ):"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/feedback_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+
+                android:maxLength="180"
+                android:singleLine="false" />
+
+            <Button
+                android:id="@+id/feed_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                style="@style/Your.Button"/>
+        </LinearLayout>

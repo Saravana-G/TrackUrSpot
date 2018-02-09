@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:src="@drawable/logo"
+        android:id="@+id/gifImage"
+        ></ImageView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:visibility="invisible"
+        android:id="@+id/fab_existing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/enter"
+        android:tint="@color/white"
+        android:layout_alignTop="@+id/fab_new"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="0dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:visibility="invisible"
+        android:id="@+id/fab_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/register"
+        android:tint="@color/white"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+         />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/new_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New"
+        android:textColor="@color/button_color"
+        android:textSize="20dp"
+        android:layout_below="@+id/fab_existing"
+        android:layout_alignLeft="@+id/fab_new"
+        android:layout_alignStart="@+id/fab_new" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/existing_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Existing"
+        android:textColor="@color/button_color"
+        android:textSize="20dp"
+        android:layout_below="@+id/fab_existing"
+        android:layout_alignLeft="@+id/fab_existing"
+        android:layout_alignStart="@+id/fab_existing" />
+
+
+</RelativeLayout>
